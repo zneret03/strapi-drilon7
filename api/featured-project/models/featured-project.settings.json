@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featured_projects",
+  "info": {
+    "name": "featuredProject"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "feature": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "technology": {
+      "type": "json"
+    },
+    "demo": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    }
+  }
+}

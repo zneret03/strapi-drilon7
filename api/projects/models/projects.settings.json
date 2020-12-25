@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "projects"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "year": {
+      "type": "integer"
+    },
+    "projectName": {
+      "type": "string"
+    },
+    "projectMadeAt": {
+      "type": "string"
+    },
+    "projectTitle": {
+      "type": "string"
+    },
+    "demo": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "projectDescription": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "projectName"
+    },
+    "projectTechnology": {
+      "type": "json"
+    }
+  }
+}
